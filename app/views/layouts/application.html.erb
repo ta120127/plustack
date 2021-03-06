@@ -20,12 +20,13 @@
     <div class="header_left">
       <h1><a href="/posts">PLUSTACK</a></h1>
     </div>
-    <div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-      <nav class="globalMenuSp">
-        <div class="header_right">
+    <div class="header_right">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+        <nav class="globalMenuSp">
           <ul>
             <% if user_signed_in? %>
             <li>
@@ -54,8 +55,7 @@
             <li><%= button_to 'ゲストログイン（閲覧用）', posts_guest_sign_in_path, method: :post, class: 'btn button' %></li>
             <% end %>
           </ul>
-        </div>
-      </nav>
+        </nav>
     </div>
   </header>
   <div class="notification">

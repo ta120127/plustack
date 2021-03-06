@@ -85,16 +85,6 @@ header {
     }
   }
 
-  .search_form {
-    display: flex;
-    align-items: center;
-
-    // レスポンシブでは非表示
-    @media screen and (max-width:768px) {
-      display: none;
-    }
-  }
-
   nav {
     margin: 0 0 0 auto;
   }
@@ -177,7 +167,7 @@ header {
       }
     }
   }
-}
+
   nav.globalMenuSp {
     position: fixed;
     z-index : 2;
@@ -219,6 +209,7 @@ header {
   nav.globalMenuSp.active {
     transform: translateY(0%);
   }
+}
 
 
 // フラッシュメッセージ
