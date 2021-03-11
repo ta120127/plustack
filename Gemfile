@@ -32,6 +32,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'sqlite3'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails', '~> 4.1.0'
 end
 
 group :development do
@@ -62,20 +63,13 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+# 書き加えた箇所
 gem 'devise'
-
 gem 'jquery-rails', '~> 4.4.0'
-
 gem 'sprockets'
-
 gem 'acts-as-taggable-on', '~> 7.0'
-
 gem 'jquery-ui-rails'
-
 gem 'font-awesome-sass', '~> 5.15.1'
-
 gem 'rails-i18n'
-
 gem 'carrierwave'
-
 gem 'mini_magick'
