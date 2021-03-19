@@ -57,12 +57,14 @@
         </nav>
     </div>
   </header>
-  <div class="notification">
-    <% flash.each do |key, value| %>
-      <%= content_tag(:div, value, class: key) %>
-    <% end %>
+  <div class="content">
+    <div class="notification">
+      <% flash.each do |key, value| %>
+        <%= content_tag(:div, value, class: key) %>
+      <% end %>
+    </div>
+    <%= yield %>
   </div>
-  <%= yield %>
   <footer>
     <p>Copyright ©︎ 2021 PLUSTACK All Rights Reserved.</p>
   </footer>
@@ -70,7 +72,7 @@
     $(function() {
 
       var headerHeight = $("header").height();
-      $("body").css("margin-top", headerHeight + 50)
+      $("body").css("margin-top", headerHeight + 60)
 
       $('.hamburger').click(function() {
         $(this).toggleClass('active');
